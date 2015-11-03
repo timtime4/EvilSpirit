@@ -6,7 +6,7 @@
 	<body>
 		<h1>Campus Housing Work Order Submission</h1>
 		<h2>Please enter your work order information</h2>
-		<form id='houseID' action="workorder_submit.php" method="post">
+		<form id='houseID' action="workOrderSubmit.php" method="post">
 			<div> 
 				<label>House ID:</label>
 				<input name="houseID" type="number">
