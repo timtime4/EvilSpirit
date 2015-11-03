@@ -10,11 +10,11 @@
     <form id="login" action="validate_login.php" method="post">
       <div>
         <label for="username">Username:</label>
-        <input id="username" type="text">
+        <input id="username" name="username" type="text">
       </div>
       <div>
         <label for="password">Password:</label>
-        <input id="username" type="text">
+        <input id="username" name="password" type="text">
       </div>
       <div>
         <input type="submit" value="Log In">
