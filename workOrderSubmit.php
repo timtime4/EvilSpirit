@@ -16,7 +16,7 @@
 
 	$workOrder = "(" . $houseID . "," . $_SESSION["userID"] . ",'" .
 		date('Y-m-d H:i:s') . "','SUBMITTED'," . $_POST["type"] . ",'" . 
-		$_POST["description"] . "','" . $_POST["urgency"] "'')"; 
+		$_POST["description"] . "','" . $_POST["urgency"] . "')"; 
 
 	echo $workOrder;
 
