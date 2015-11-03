@@ -19,12 +19,12 @@
 
 			<div> 
 				<label>Type:</label>
-				<input name="type" type="radio" value="electric" checked> Electric
-				<input name="type" type="radio" value="plumbing"> Plumbing
-				<input name="type" type="radio" value="hvac"> HVAC
-				<input name="type" type="radio" value="appliance"> Appliance
-				<input name="type" type="radio" value="exterior"> Exterior
-				<input name="type" type="radio" value="other"> Other
+				<input name="type" type="radio" value="ELECTRIC" checked> Electric
+				<input name="type" type="radio" value="PLUMBING"> Plumbing
+				<input name="type" type="radio" value="HVAC"> HVAC
+				<input name="type" type="radio" value="APPLIANCE"> Appliance
+				<input name="type" type="radio" value="EXTERIOR"> Exterior
+				<input name="type" type="radio" value="OTHER"> Other
 			</div>
 
 			<div>
