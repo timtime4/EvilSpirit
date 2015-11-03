@@ -25,7 +25,7 @@
 	if($userType == "RENTER"){
 		$_SESSION["userID"] = $queryArray["userID"];
 
-		echo '<script type="text/javascript"> window.location = "./makeWordOrder.html" </script>';
+		echo '<script type="text/javascript"> window.location = "./makeWorkOrder.php" </script>';
 	}
 
 
