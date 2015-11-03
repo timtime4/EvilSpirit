@@ -24,10 +24,15 @@ session_start();
 			$query = "SELECT username, password, userType FROM Users WHERE username = '" . $username ."'";
 			$result = mysqli_query($link, $query) or die('Query failed: ' . mysql_error());
 
-			$query_array = mysqli_fetch_array($result, MYSQLI_BOTH);
+			$queryArray = mysqli_fetch_array($result, MYSQLI_BOTH);
 
-			echo $query_array["userType"];
+			$userType = $queryArray["userType"];
 			
+			if($userType == "RENTER"){
+				echo '<script type="text/javascript"> window.location = "./makeWordOrder.html" </script>';
+			}
+
+
 			// Free resultset
 			mysqli_free_result($result);
 			// Closing connection
