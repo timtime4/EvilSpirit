@@ -1,5 +1,3 @@
-
-
 <html>
   <head>
     <title>Welcome!</title>
@@ -7,18 +5,18 @@
   <body>
     <h1>Welcome to the Campus Housing Work Order Management System</h1>
     <h2>Please log in</h2>
-    <form id="login" action="validate_login.php" method="post">
+    <form action="validate_login.php" method="post">
       <div>
         <label for="username">Username:</label>
         <input id="username" name="username" type="text">
       </div>
       <div>
         <label for="password">Password:</label>
-        <input id="username" name="password" type="text">
+        <input id="password" name="password" type="password">
       </div>
       <div>
         <input type="submit" value="Log In">
       </div>
     </form>
   </body>
-</html
+</html>
