@@ -21,7 +21,7 @@ session_start();
 		  mysqli_select_db($link, 'tpusater') or die('Could not select database');
 			
 			// Performing SQL query
-			$query = 'SELECT username, password FROM Users WHERE username = '. $username;
+			$query = "SELECT username, password FROM Users WHERE username = '" . $username ."'";
 			$result = mysqli_query($link, $query) or die('Query failed: ' . mysql_error());
 			// Printing results in HTML
 			echo "<table>\n";
