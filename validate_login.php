@@ -16,6 +16,13 @@ session_start();
 		?>
 
 		Your username is <?php echo $username;?> and your password is <?php echo $password;?>.
+
+		<?php
+		  // Connect to database
+		  $link = mysqli_connect('localhost', 'tpusater', 'evilspirit')
+		    or die('Could not connect: ' . mysql_error());
+		  echo 'Connected successfully!';
+		?>
 	</body>
 
 </html>
