@@ -5,7 +5,7 @@
   <body>
     <h1>Welcome to the Campus Housing Work Order Management System</h1>
     <h2>Please log in</h2>
-    <form action="validate_login.php" method="post">
+    <form action="validateLogin.php" method="post">
       <div>
         <label for="username">Username:</label>
         <input id="username" name="username" type="text">
