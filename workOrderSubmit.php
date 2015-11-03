@@ -1,5 +1,6 @@
 <?php
-	$link mysqli_connect('localhost', 'tpusater', 'evilspirit');
+	$link = mysqli_connect('localhost', 'tpusater', 'evilspirit');
+	
 	if(!$link){
 		die('Could not connect: ' . mysql_error());
 	}
