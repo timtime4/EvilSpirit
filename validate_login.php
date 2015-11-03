@@ -26,7 +26,7 @@ session_start();
 
 			$query_array = mysqli_fetch_array($result, MYSQLI_BOTH);
 
-			echo $query_array[0];
+			echo $query_array["userType"];
 			
 			// Free resultset
 			mysqli_free_result($result);
