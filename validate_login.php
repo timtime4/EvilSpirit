@@ -21,18 +21,13 @@ session_start();
 		  mysqli_select_db($link, 'tpusater') or die('Could not select database');
 			
 			// Performing SQL query
-			$query = "SELECT username, password FROM Users WHERE username = '" . $username ."'";
+			$query = "SELECT username, password, userType FROM Users WHERE username = '" . $username ."'";
 			$result = mysqli_query($link, $query) or die('Query failed: ' . mysql_error());
-			// Printing results in HTML
-			echo "<table>\n";
-			while ($tuple = mysqli_fetch_array($result, MYSQL_ASSOC)) {
- 			echo "\t<tr>\n";
- 			foreach ($tuple as $col_value) {
-			 	echo "\t\t<td>$col_value</td>\n";
-			 }
-			 echo "\t</tr>\n";
-			}
-			echo "</table>\n";
+
+			$query_array = mysqli_fetch_array($result, MYSQLI_BOTH);
+
+			echo $query_array[0,0] . $query_array[0,1] . $query_array[0,2];
+			
 			// Free resultset
 			mysqli_free_result($result);
 			// Closing connection
