@@ -29,6 +29,7 @@
                 				<input name="urgency" type="checkbox" value="HIGH"> High
                 				<input name="urgency" type="checkbox" value="EMERGENCY"> Emergency
                     </div>
+                    <input type="submit" value="Search">
                 </form>
         </body>
 </html>
