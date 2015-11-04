@@ -16,10 +16,6 @@
 			$updateWorkOrderQuery = "UPDATE WorkOrder SET status = '" . $_POST["newStatus"] .
 			  "' WHERE orderID = " . $_POST["workOrderID"];
 
-			echo $updateWorkOrderQuery;
-
-			die('\nbye');
-
 			$updateWorkOrderQueryResult = mysqli_query($link, $updateWorkOrderQuery) 
 					or die('Query failed: ' . mysql_error());
 
