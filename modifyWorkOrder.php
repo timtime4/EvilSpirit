@@ -22,7 +22,7 @@
 				</select>
 			</div>
 
-			<input type="hidden" name="workOrderID" value=<?php printf(""%s"", $_POST["workOrderID"]);?>>
+			<input type="hidden" name="workOrderID" value="<?php printf("%s", $_POST["workOrderID"]);?>">
 
 			<div>
 				<input type="submit" value="Submit">
