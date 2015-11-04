@@ -67,7 +67,7 @@
 				  }
 				  echo '<td><a href="#">Modify</a></td>\t\t' .
 				  	'<td><a href="deleteWorkOrder.php?workOrderID='. $tuple["orderID"] .
-				  	'>Delete</a></td>\t\t</tr>\n';
+				  	'">Delete</a></td>\t\t</tr>\n';
 				}
 				echo "</table>\n";
 			?>
