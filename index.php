@@ -1,6 +1,7 @@
 <html>
   <head>
     <title>Welcome!</title>
+    <link rel="stylesheet" href="style/style.css">
   </head>
   <body>
     <h1>Welcome to the Campus Housing Work Order Management System</h1>

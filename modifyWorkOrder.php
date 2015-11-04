@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<title>Modify Work Order</title>
+		<link rel="stylesheet" href="style/style.css">
 	</head>
 
 	<body>
