@@ -18,7 +18,7 @@
 
 			$criteria = 0;
 
-			printf("%s , %s, %s\n", $_POST["houseID"], $POST["type"], $_POST["urgency"]);
+			printf("%s , %s, %s\n", $_POST["houseID"], $_POST["type"], $_POST["urgency"]);
 
 			exit("bye");
 
