@@ -14,17 +14,17 @@
 
 			mysqli_select_db($link, 'tpusater') or die('Could not select database');
 
-			$workOrderQuery = "SELECT * FROM WorkOrder WHERE ";
+			$workOrderQuery = "SELECT * FROM WorkOrder WHERE 1 =1 ";
 
 			$criteria = 0;
 
 			printf("%s , %s, %s\n", $_POST["houseID"], $_POST["type"], $_POST["urgency"]);
 
-			if(!is_null($_POST["houseID"])){
-				$workOrderQuery .= "houseID = " . $_POST["houseID"];
-			} elseif(!is_null($_POST["type"])){
+			if ( $_POST["houseID"] != "" ){
+				$workOrderQuery .= " AND houseID = " . $_POST["houseID"];
+			} elseif ( $_POST["type"] != 0 ){
 				$workOrderQuery .= " AND workOrderType = '" . $_POST["type"] . "'";
-			} elseif(!is_null($_POST["urgency"])){
+			} elseif ( $_POST["urgency"] != 0 ){
 				$workOrderQuery .= " AND urgency = '" . $_POST["urgency"] . "'";
 			}
 
