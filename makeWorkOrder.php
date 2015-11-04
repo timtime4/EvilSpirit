@@ -34,15 +34,17 @@
 
 			<div>
 				<label>Urgency:</label>
-				<input name="urgency" type="radio" value="low" checked> Low
-				<input name="urgency" type="radio" value="medium"> Medium
-				<input name="urgency" type="radio" value="high"> High
-				<input name="urgency" type="radio" value="emergency"> Emergency
+				<input name="urgency" type="radio" value="LOW" checked> Low
+				<input name="urgency" type="radio" value="MEDIUM"> Medium
+				<input name="urgency" type="radio" value="HIGH"> High
+				<input name="urgency" type="radio" value="EMERGENCY"> Emergency
 			</div>
 
 			<div>
 				<input type="submit" value="Submit">
 			</div>
+			
+		</form>
 
 	</body>
 
