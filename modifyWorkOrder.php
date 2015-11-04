@@ -7,20 +7,22 @@
 		<h1>Update Existing Work Order</h1>
 		<h2>Please update Status of the Work Order</h2>
 		<form id='workOrderID' action="modifyWorkOrderSubmit.php" method="post">
-			<div>
+			<!-- <div>
 				<label>Work Order ID:</label>
 				<input name="workOrderID" type="number">
-			</div>
+			</div> -->
 
 			<div>
 				<label>Select New Status</label>
-				<select id="newStatus">
+				<select name="newStatus">
 					<option value="SUBMITTED">Submitted</option>
 					<option value="WAITING">Waiting</option>
 					<option value="SCHEDULED">Schedule</option>
 					<option value="COMPLETED">Completed</option>
 				</select>
 			</div>
+
+			<input type="hidden" name="workOrderID" value="<?php $_POST["workOrderID"] ?>">
 
 			<div>
 				<input type="submit" value="Submit">
