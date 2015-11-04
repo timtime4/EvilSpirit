@@ -10,7 +10,7 @@
 		<div>
 			<table>
 				<tr>
-					<th>Work Order ID</th>
+					<th>ID</th>
 					<th>House ID</th>
 					<th>User ID</th>
 					<th>Date Created</th>
@@ -32,11 +32,12 @@
 
 					// Dynamically (kinda) build the query
 
-					$workOrderQuery = "SELECT * FROM WorkOrder WHERE 1 = 1 ";
+					$workOrderQuery = "SELECT orderID, houseID, userID, created, status," . 
+					  "workOrderType, description, urgency FROM WorkOrder WHERE 1 = 1 ";
 
 					$criteria = 0;
 
-					if ( $_POST["houseID"] != "" ){
+					if ( isset($_POST["houseID"]) ){
 						$workOrderQuery .= " AND houseID = " . $_POST["houseID"];
 					} elseif ( isset($_POST["type"]) ){
 						$workOrderQuery .= " AND workOrderType = '" . $_POST["type"] . "'";
