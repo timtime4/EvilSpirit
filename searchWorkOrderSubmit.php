@@ -4,81 +4,70 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	</head>
 	<body>
-		<script type="text/javascript">
-
-	    function confirmDelete(orderID) {
-	    		var message = 'Are you sure you want to delete work order ';
-	    		message = message + orderID.toString();
-
-	        if (confirm(message)) {
-	            //Make ajax call
-	            $.ajax({
-	                url: "./deleteWorkOrder.php",
-	                type: "POST",
-	                data: {workOrderID : orderID},
-	                dataType: "html", 
-	                success: function() {
-	                    alert("It was succesfully deleted!");
-	                }
-	            });
-
-	        }
-	    }
-		</script>
 
 		<h1> Search Results </h1>
 
 		<div>
-			<?php
-				session_start();
+			<table>
+				<tr>
+					<th>Work Order ID</th>
+					<th>House ID</th>
+					<th>User ID</th>
+					<th>Date Created</th>
+					<th>Status</th>
+					<th>Type</th>
+					<th>Description</th>
+					<th>Urgency</th>
+				</tr>
+				<?php
+					session_start();
 
-				$link = mysqli_connect('localhost', 'tpusater', 'evilspirit');
-				
-				if(!$link){
-					die('Could not connect: ' . mysql_error());
-				}
+					$link = mysqli_connect('localhost', 'tpusater', 'evilspirit');
+					
+					if(!$link){
+						die('Could not connect: ' . mysql_error());
+					}
 
-				mysqli_select_db($link, 'tpusater') or die('Could not select database');
+					mysqli_select_db($link, 'tpusater') or die('Could not select database');
 
-				// Dynamically (kinda) build the query
+					// Dynamically (kinda) build the query
 
-				$workOrderQuery = "SELECT * FROM WorkOrder WHERE 1 = 1 ";
+					$workOrderQuery = "SELECT * FROM WorkOrder WHERE 1 = 1 ";
 
-				$criteria = 0;
+					$criteria = 0;
 
-				if ( $_POST["houseID"] != "" ){
-					$workOrderQuery .= " AND houseID = " . $_POST["houseID"];
-				} elseif ( isset($_POST["type"]) ){
-					$workOrderQuery .= " AND workOrderType = '" . $_POST["type"] . "'";
-				} elseif ( isset($_POST["urgency"]) ){
-					$workOrderQuery .= " AND urgency = '" . $_POST["urgency"] . "'";
-				}
+					if ( $_POST["houseID"] != "" ){
+						$workOrderQuery .= " AND houseID = " . $_POST["houseID"];
+					} elseif ( isset($_POST["type"]) ){
+						$workOrderQuery .= " AND workOrderType = '" . $_POST["type"] . "'";
+					} elseif ( isset($_POST["urgency"]) ){
+						$workOrderQuery .= " AND urgency = '" . $_POST["urgency"] . "'";
+					}
 
-				// Run the query
-				$workOrderQueryResult = mysqli_query($link, $workOrderQuery) 
-					or die('Query failed: ' . mysql_error());
+					// Run the query
+					$workOrderQueryResult = mysqli_query($link, $workOrderQuery) 
+						or die('Query failed: ' . mysql_error());
 
-				// Printing results in HTML
-				echo "<table>";
-				while ($tuple = mysqli_fetch_array($workOrderQueryResult, MYSQL_ASSOC)) {
-				  echo "<tr>";
-				  foreach ($tuple as $col_value) {
-				    echo "<td>$col_value</td>";
-				  }
-				  echo '<td>' .
-						    '<form action="modifyWorkOrder.php" method="POST">'.
-						    	'<input type="hidden" name="workOrderID" value="' . $tuple["orderID"] . '">' .
-						    	'<input type="submit" value="Modify">' .
-						    '</form></td>' .
-						    '<td>' .
-						    '<form action="deleteWorkOrder.php" method="POST">'.
-						    	'<input type="hidden" name="workOrderID" value="' . $tuple["orderID"] . '">' .
-						    	'<input type="submit" value="Delete">' .
-						    '</form></td>' .
-				  	'</tr>';
-				}
-				echo "</table>\n";
-			?>
+					// Printing results in HTML
+					while ($tuple = mysqli_fetch_array($workOrderQueryResult, MYSQL_ASSOC)) {
+					  echo "<tr>";
+					  foreach ($tuple as $col_value) {
+					    echo "<td>$col_value</td>";
+					  }
+					  echo '<td>' .
+							    '<form action="modifyWorkOrder.php" method="POST">'.
+							    	'<input type="hidden" name="workOrderID" value="' . $tuple["orderID"] . '">' .
+							    	'<input type="submit" value="Modify">' .
+							    '</form></td>' .
+							    '<td>' .
+							    '<form action="deleteWorkOrder.php" method="POST">'.
+							    	'<input type="hidden" name="workOrderID" value="' . $tuple["orderID"] . '">' .
+							    	'<input type="submit" value="Delete">' .
+							    '</form></td>' .
+					  	'</tr>';
+					}
+				?>
+		  </table>
 		</div>
 
 	</body>
