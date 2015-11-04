@@ -18,6 +18,10 @@
 
 			$criteria = 0;
 
+			printf("%s , %s, %s\n", $_POST["houseID"], $POST["type"], $_POST["urgency"]);
+
+			exit("bye");
+
 			if(!is_null($_POST["houseID"])){
 				$workOrderQuery .= "houseID = " . $_POST["houseID"];
 			} elseif(!is_null($_POST["type"])){
