@@ -7,7 +7,7 @@
 
 	    function confirmDelete(orderID) {
 	    		var message = 'Are you sure you want to delete work order ';
-	    		message = message.concat(message, orderID.toString());
+	    		message = message + orderID.toString();
 
 	        if (confirm(message)) {
 	            //Make ajax call

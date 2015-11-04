@@ -1,4 +1,6 @@
 <?php
+	printf("Work order to delete is %d", $_POST["workOrderID"]);
+
 	$link = mysqli_connect('localhost', 'tpusater', 'evilspirit');
 				
 	if(!$link){
