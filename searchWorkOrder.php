@@ -19,15 +19,16 @@
                 				<input name="type" type="checkbox" value="HVAC"> HVAC
                 				<input name="type" type="checkbox" value="APPLIANCE"> Appliance
                 				<input name="type" type="checkbox" value="EXTERIOR"> Exterior
-                				<input name="type" type="checkbox" value='Other'> Other
+                				<input name="type" type="checkbox" value='OTHER'> Other
                 		</div>
 
                 		<div>
                 				<label>Urgency:</label>
-                				<input name="type" type="checkbox" value="low"> Low
-                				<input name="type" type="checkbox" value="medium"> Medium
-                				<input name="type" type="checkbox" value="high"> High
-                				<input name="type" type="checkbox" value="emergency"> Emergency
+                				<input name="urgency" type="checkbox" value="LOW"> Low
+                				<input name="urgency" type="checkbox" value="MEDIUM"> Medium
+                				<input name="urgency" type="checkbox" value="HIGH"> High
+                				<input name="urgency" type="checkbox" value="EMERGENCY"> Emergency
                     </div>
+                </form>
         </body>
 </html>
