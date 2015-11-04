@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<title>Work Order Search Results</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	</head>
 	<body>
 		<script type="text/javascript">
@@ -26,7 +27,6 @@
 		</script>
 
 		<h1> Search Results </h1>
-
 
 		<div>
 			<?php
