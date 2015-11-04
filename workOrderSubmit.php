@@ -1,3 +1,4 @@
+
 <?php
 	session_start();
 
@@ -30,6 +31,6 @@
 	$workOrderSumbitResult = mysqli_query($link, $workOrderSumbit) 
 		or die('Insert Query failed: ' . mysql_error());
 
-	echo "Work order sumbitted successfully!";
+	echo "\nWork order sumbitted successfully!";
 
 ?>
