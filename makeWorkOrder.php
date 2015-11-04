@@ -8,16 +8,6 @@
 		<h2>Please enter your work order information</h2>
 		<form id='houseID' action="workOrderSubmit.php" method="post">
 			<div> 
-				<label>House ID:</label>
-				<input name="houseID" type="number">
-			</div>
-
-			<div> 
-				<label>User ID:</label>
-				<input name="userID" type="number">
-			</div>
-
-			<div> 
 				<label>Type:</label>
 				<input name="type" type="radio" value="ELECTRIC" checked> Electric
 				<input name="type" type="radio" value="PLUMBING"> Plumbing

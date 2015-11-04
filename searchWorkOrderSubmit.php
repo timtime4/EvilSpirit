@@ -59,15 +59,23 @@
 					or die('Query failed: ' . mysql_error());
 
 				// Printing results in HTML
-				echo "<table>\n";
+				echo "<table>";
 				while ($tuple = mysqli_fetch_array($workOrderQueryResult, MYSQL_ASSOC)) {
-				  echo "\t<tr>\n";
+				  echo "<tr>";
 				  foreach ($tuple as $col_value) {
-				    echo "\t\t<td>$col_value</td>\n";
+				    echo "<td>$col_value</td>";
 				  }
-				  echo '<td><a href="#">Modify</a></td>\t\t' .
-				  	'<td><a href="deleteWorkOrder.php?workOrderID='. $tuple["orderID"] .
-				  	'">Delete</a></td>\t\t</tr>\n';
+				  echo '<td>' .
+						    '<form action="modifyWorkOrder.php" method="POST">'.
+						    	'<input type="hidden" name="workOrderID" value="' . $tuple["orderID"] . '">' .
+						    	'<input type="submit" value="Modify">' .
+						    '</form></td>' .
+						    '<td>' .
+						    '<form action="deleteWorkOrder.php" method="POST">'.
+						    	'<input type="hidden" name="workOrderID" value="' . $tuple["orderID"] . '">' .
+						    	'<input type="submit" value="Delete">' .
+						    '</form></td>' .
+				  	'</tr>';
 				}
 				echo "</table>\n";
 			?>
