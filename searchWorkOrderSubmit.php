@@ -65,9 +65,9 @@
 				  foreach ($tuple as $col_value) {
 				    echo "\t\t<td>$col_value</td>\n";
 				  }
-				  echo '<td><a href="#">Modify</a></td>\t\t' .
-				  	'<td><a href="deleteWorkOrder.php?workOrderID='. $tuple["orderID"] .
-				  	'">Delete</a></td>\t\t</tr>\n';
+				  echo '<td><a href="#">Modify</a></td>' .
+				  	'<td><a href="deleteWorkOrder.php?workOrderID='. $tuple["orderID"] . '">Delete</a></td>' .
+				  	'</tr>';
 				}
 				echo "</table>\n";
 			?>

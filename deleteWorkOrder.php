@@ -2,8 +2,7 @@
 	<head>
 	</head>
 	<body>
-		<?php
-			printf("Work order to delete is %d", $_GET["workOrderID"]);
+		<?php	
 
 			$link = mysqli_connect('localhost', 'tpusater', 'evilspirit');
 						
@@ -18,6 +17,8 @@
 
 			$deleteQueryResult = mysqli_query($link, $deleteQuery) 
 					or die('Query failed: ' . mysql_error());
+
+			printf("Work order %d has been deleted.", $_GET["workOrderID"]);
 
 		?>
 	</body>
