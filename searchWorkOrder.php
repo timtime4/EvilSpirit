@@ -28,5 +28,6 @@
                 				<input name="type" type="checkbox" value="medium"> Medium
                 				<input name="type" type="checkbox" value="high"> High
                 				<input name="type" type="checkbox" value="emergency"> Emergency
+                    </div>
         </body>
 </html>

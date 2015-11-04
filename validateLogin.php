@@ -19,13 +19,14 @@
 	
 	// TODO: Validate password
 
-	// Start
+	// Start session
 	session_start();
+	$_SESSION["userID"] = $queryArray["userID"];
 
 	if($userType == "RENTER"){
-		$_SESSION["userID"] = $queryArray["userID"];
-
 		echo '<script type="text/javascript"> window.location = "./makeWorkOrder.php" </script>';
+	} elseif($userType == "MAINTENANCE"){
+		echo '<script type="text/javascript"> window.location = "./searchWorkOrder.php" </script>';
 	}
 
 
