@@ -37,7 +37,7 @@
 
 					$criteria = 0;
 
-					if ( isset($_POST["houseID"]) ){
+					if ( $_POST["houseID"] != "" ){
 						$workOrderQuery .= " AND houseID = " . $_POST["houseID"];
 					} elseif ( isset($_POST["type"]) ){
 						$workOrderQuery .= " AND workOrderType = '" . $_POST["type"] . "'";
