@@ -13,12 +13,12 @@
 			mysqli_select_db($link, 'tpusater') or die('Could not select database');
 
 			// Dynamically (kinda) build the query
-			$deleteQuery = "DELETE FROM WorkOrder WHERE orderID = " . $_GET["workOrderID"];
+			$deleteQuery = "DELETE FROM WorkOrder WHERE orderID = " . $_POST["workOrderID"];
 
 			$deleteQueryResult = mysqli_query($link, $deleteQuery) 
 					or die('Query failed: ' . mysql_error());
 
-			printf("Work order %d has been deleted.", $_GET["workOrderID"]);
+			printf("Work order %d has been deleted.\n", $_POST["workOrderID"]);
 
 		?>
 	</body>
