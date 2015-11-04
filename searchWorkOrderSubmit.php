@@ -20,8 +20,6 @@
 
 			printf("%s , %s, %s\n", $_POST["houseID"], $_POST["type"], $_POST["urgency"]);
 
-			exit("bye");
-
 			if(!is_null($_POST["houseID"])){
 				$workOrderQuery .= "houseID = " . $_POST["houseID"];
 			} elseif(!is_null($_POST["type"])){
@@ -30,6 +28,9 @@
 				$workOrderQuery .= " AND urgency = '" . $_POST["urgency"] . "'";
 			}
 
+			echo $workOrderQuery;
+
+			exit("bye");
 
 			$workOrderQueryResult = mysqli_query($link, $workOrderQuery) 
 				or die('Query failed: ' . mysql_error());
