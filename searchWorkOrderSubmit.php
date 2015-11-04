@@ -3,7 +3,31 @@
 		<title>Work Order Search Results</title>
 	</head>
 	<body>
+		<script type="text/javascript">
+
+	    function confirmDelete(orderID) {
+	    		var message = 'Are you sure you want to delete work order ';
+	    		message = message.concat(message, orderID.toString());
+
+	        if (confirm(message)) {
+	            //Make ajax call
+	            $.ajax({
+	                url: "deleteWorkOrder.php",
+	                type: "POST",
+	                data: {workOrderID : orderID},
+	                dataType: "html", 
+	                success: function() {
+	                    alert("It was succesfully deleted!");
+	                }
+	            });
+
+	        }
+	    }
+		</script>
+
 		<h1> Search Results </h1>
+
+
 		<div>
 			<?php
 				session_start();
@@ -43,33 +67,11 @@
 				  }
 				  echo '<td><a href="#">Modify</a></td>\t\t' .
 				  		'<td><a href="javascript:confirmDelete('. $tuple["orderID"] .
-				  			')">Delete</a></td>\t\t</tr>\n';
+				  			')">Delete ' . $tuple["orderID"] . '</a></td>\t\t</tr>\n';
 				}
 				echo "</table>\n";
 			?>
 		</div>
-
-		<script type="text/javascript">
-
-		    function confirmDelete(orderID) {
-		    		var message = 'Are you sure you want to delete work order ';
-		    		message = message.concat(message, orderID.toString());
-
-		        if (confirm(message)) {
-		            //Make ajax call
-		            $.ajax({
-		                url: "scriptDelete.php",
-		                type: "POST",
-		                data: {workOrderID : },
-		                dataType: "html", 
-		                success: function() {
-		                    alert("It was succesfully deleted!");
-		                }
-		            });
-
-		        }
-		    }
-		</script>
 
 	</body>
 </html>
