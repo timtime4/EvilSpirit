@@ -14,7 +14,7 @@
 
 			mysqli_select_db($link, 'tpusater') or die('Could not select database');
 
-			$workOrderQuery = "SELECT * FROM WorkOrder WHERE 1 =1 ";
+			$workOrderQuery = "SELECT * FROM WorkOrder WHERE 1 = 1 ";
 
 			$criteria = 0;
 
@@ -22,9 +22,9 @@
 
 			if ( $_POST["houseID"] != "" ){
 				$workOrderQuery .= " AND houseID = " . $_POST["houseID"];
-			} elseif ( $_POST["type"] != 0 ){
+			} elseif ( isset($_POST["type"]) ){
 				$workOrderQuery .= " AND workOrderType = '" . $_POST["type"] . "'";
-			} elseif ( $_POST["urgency"] != 0 ){
+			} elseif ( isset($_POST["urgency"]) ){
 				$workOrderQuery .= " AND urgency = '" . $_POST["urgency"] . "'";
 			}
 
