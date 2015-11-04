@@ -41,10 +41,35 @@
 				  foreach ($tuple as $col_value) {
 				    echo "\t\t<td>$col_value</td>\n";
 				  }
-				  echo "<td><a href='#'>Modify</a></td>\t\t<td><a href='#'>Delete</a></td>\t\t</tr>\n";
+				  echo '<td><a href="#">Modify</a></td>\t\t' .
+				  		'<td><a href="javascript:confirmDelete('. $tuple["orderID"] .
+				  			')">Delete</a></td>\t\t</tr>\n';
 				}
 				echo "</table>\n";
 			?>
 		</div>
+
+		<script type="text/javascript">
+
+		    function confirmDelete(orderID) {
+		    		var message = 'Are you sure you want to delete work order ';
+		    		message = message.concat(message, orderID.toString());
+
+		        if (confirm(message)) {
+		            //Make ajax call
+		            $.ajax({
+		                url: "scriptDelete.php",
+		                type: "POST",
+		                data: {workOrderID : },
+		                dataType: "html", 
+		                success: function() {
+		                    alert("It was succesfully deleted!");
+		                }
+		            });
+
+		        }
+		    }
+		</script>
+
 	</body>
 </html>
