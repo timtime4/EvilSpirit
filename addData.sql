@@ -1,196 +1,196 @@
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(8,3,"222 North Saint Louis Blvd","South Bend","IN",46617)
+values(8,3,"222 North Saint Louis Blvd","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(5,2,"927 East Washington St","South Bend","IN",46617)
+values(5,2,"927 East Washington St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(6,3,"925 East Washington St","South Bend","IN",46617)
+values(6,3,"925 East Washington St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(7,3,"919 East Washington St","South Bend","IN",46617)
+values(7,3,"919 East Washington St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(6,2,"914 East Corby Blvd","South Bend","IN",46617)
+values(6,2,"914 East Corby Blvd","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(3,1,"910 East Miner St","South Bend","IN",46617)
+values(3,1,"910 East Miner St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(4,2,"907 East Cedar St","South Bend","IN",46617)
+values(4,2,"907 East Cedar St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(6,2,"906 East Corby Blvd","South Bend","IN",46617)
+values(6,2,"906 East Corby Blvd","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(6,2,"904 East Corby Blvd","South Bend","IN",46617)
+values(6,2,"904 East Corby Blvd","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(6,2,"902 East Corby Blvd","South Bend","IN",46617)
+values(6,2,"902 East Corby Blvd","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(3,1,"836 East Sorin St","South Bend","IN",46617)
+values(3,1,"836 East Sorin St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(2,1,"835 Notre Dame Ave","South Bend","IN",46617)
+values(2,1,"835 Notre Dame Ave","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(2,1,"832 Notre Dame Ave","South Bend","IN",46617)
+values(2,1,"832 Notre Dame Ave","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(3,1,"828 East Sorin St","South Bend","IN",46617)
+values(3,1,"828 East Sorin St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(5,2,"825 North Notre Dame Ave","South Bend","IN",46617)
+values(5,2,"825 North Notre Dame Ave","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(9,3,"825 East Washington St","South Bend","IN",46617)
+values(9,3,"825 East Washington St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(6,3,"821 East Washington St","South Bend","IN",46617)
+values(6,3,"821 East Washington St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(5,2,"820 South Bend Ave","South Bend","IN",46617)
+values(5,2,"820 South Bend Ave","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(2,1,"820 Notre Dame Ave","South Bend","IN",46617)
+values(2,1,"820 Notre Dame Ave","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(6,3,"819 East Washington St","South Bend","IN",46617)
+values(6,3,"819 East Washington St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(9,5,"815 East Wayne St","South Bend","IN",46617)
+values(9,5,"815 East Wayne St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(6,2,"815 East Washington St","South Bend","IN",46617)
+values(6,2,"815 East Washington St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(2,1,"814 East Sorin St","South Bend","IN",46617)
+values(2,1,"814 East Sorin St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(3,1,"810 East Sorin St","South Bend","IN",46617)
+values(3,1,"810 East Sorin St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(4,1,"808 East Corby Blvd","South Bend","IN",46617)
+values(4,1,"808 East Corby Blvd","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(3,1,"802 East Sorin St","South Bend","IN",46617)
+values(3,1,"802 East Sorin St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(5,3,"724 East Washington St","South Bend","IN",46617)
+values(5,3,"724 East Washington St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(5,3,"722 East LaSalle Ave","South Bend","IN",46617)
+values(5,3,"722 East LaSalle Ave","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(6,3,"720 East Washington St","South Bend","IN",46617)
+values(6,3,"720 East Washington St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(2,1,"718 East Washington St","South Bend","IN",46617)
+values(2,1,"718 East Washington St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(6,2,"716 East Washington St","South Bend","IN",46617)
+values(6,2,"716 East Washington St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(4,2,"708 East Colfax Ave","South Bend","IN",46617)
+values(4,2,"708 East Colfax Ave","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(9,4,"702 East Colfax Ave","South Bend","IN",46617)
+values(9,4,"702 East Colfax Ave","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(6,2,"630 North Saint Peter St","South Bend","IN",46617)
+values(6,2,"630 North Saint Peter St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(5,2,"614 North Saint Peter St","South Bend","IN",46617)
+values(5,2,"614 North Saint Peter St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(5,2,"613 North Saint Peter St","South Bend","IN",46617)
+values(5,2,"613 North Saint Peter St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(5,2,"610 North Saint Peter St","South Bend","IN",46617)
+values(5,2,"610 North Saint Peter St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(5,2,"609 North Saint Peter St","South Bend","IN",46617)
+values(5,2,"609 North Saint Peter St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(5,2,"606 North Saint Peter St","South Bend","IN",46617)
+values(5,2,"606 North Saint Peter St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(5,3,"602 North Notre Dame Ave","South Bend","IN",46617)
+values(5,3,"602 North Notre Dame Ave","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(5,2,"601 East Corby Blvd","South Bend","IN",46617)
+values(5,2,"601 East Corby Blvd","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(6,2,"516 Notre Dame Ave","South Bend","IN",46617)
+values(6,2,"516 Notre Dame Ave","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(5,3,"329 North Frances St","South Bend","IN",46617)
+values(5,3,"329 North Frances St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(5,2,"312 South Saint Peter St","South Bend","IN",46617)
+values(5,2,"312 South Saint Peter St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(6,2,"226 North Saint Peter St","South Bend","IN",46617)
+values(6,2,"226 North Saint Peter St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(6,3,"502 Notre Dame Ave","South Bend","IN",46617)
+values(6,3,"502 Notre Dame Ave","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(4,2,"130 North Saint Louis Blvd","South Bend","IN",46617)
+values(4,2,"130 North Saint Louis Blvd","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(6,2,"122 North Saint Peter St","South Bend","IN",46617)
+values(6,2,"122 North Saint Peter St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(4,2,"119 North Saint Peter St","South Bend","IN",46617)
+values(4,2,"119 North Saint Peter St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(5,2,"115 North Notre Dame Ave","South Bend","IN",46617)
+values(5,2,"115 North Notre Dame Ave","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(5,2,"113 North Saint Peter St","South Bend","IN",46617)
+values(5,2,"113 North Saint Peter St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(5,2,"113 North Notre Dame Ave","South Bend","IN",46617)
+values(5,2,"113 North Notre Dame Ave","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(6,2,"111 North Saint Peter St","South Bend","IN",46617)
+values(6,2,"111 North Saint Peter St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(4,2,"109 North Saint Peter St","South Bend","IN",46617)
+values(4,2,"109 North Saint Peter St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(3,3,"109 North Hill St","South Bend","IN",46617)
+values(3,3,"109 North Hill St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(6,2,"1022 East Madison St","South Bend","IN",46617)
+values(6,2,"1022 East Madison St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(6,2,"1017 East Washington St","South Bend","IN",46617)
+values(6,2,"1017 East Washington St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(7,3,"1016 South Bend Ave","South Bend","IN",46617)
+values(7,3,"1016 South Bend Ave","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(2,1,"1013 East Cedar St","South Bend","IN",46617)
+values(2,1,"1013 East Cedar St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(4,2,"1012 South Bend Ave","South Bend","IN",46617)
+values(4,2,"1012 South Bend Ave","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(5,2,"1019 East Cedar St","South Bend","IN",46617)
+values(5,2,"1019 East Cedar St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(8,2,"1011 East Madison St","South Bend","IN",46617)
+values(8,2,"1011 East Madison St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(6,3,"1011 East Cedar St","South Bend","IN",46617)
+values(6,3,"1011 East Cedar St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(6,2,"1007 East Washington St","South Bend","IN",46617)
+values(6,2,"1007 East Washington St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
-values(3,1,"1003 East Cedar St","South Bend","IN",46617)
+values(3,1,"1003 East Cedar St","South Bend","IN",46617);
 
 insert into House (numBedrooms, numBathrooms, streetAddr1, city, state, zip)
