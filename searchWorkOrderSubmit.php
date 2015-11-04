@@ -30,8 +30,6 @@
 
 			echo $workOrderQuery;
 
-			exit("bye");
-
 			$workOrderQueryResult = mysqli_query($link, $workOrderQuery) 
 				or die('Query failed: ' . mysql_error());
 
