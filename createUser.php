@@ -5,7 +5,7 @@
 	</head>
 	<body>
 		<h1>Create a New User</h1>
-		<form name="newUser" action="submitCreateUser.php" method="POST">
+		<form name="newUser" action="checkCreateUser.php" method="POST">
 			<div>
 				<label>First Name:</label>
 				<input type="text" name="firstName">
@@ -41,13 +41,3 @@
 	</body>
 </html>
 
-<?php
-	function checkForm(){
-		echo "hello";
-		die("\ngoodbye")
-	}
-
-	if(isset($_POST["submit"])){
-		checkForm();
-	}
-?>
