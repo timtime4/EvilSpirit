@@ -27,6 +27,8 @@
 		echo '<script type="text/javascript"> window.location = "./makeWorkOrder.php" </script>';
 	} elseif($userType == "MAINTENANCE"){
 		echo '<script type="text/javascript"> window.location = "./searchWorkOrder.php" </script>';
+	} elseif($userType == "ADMINISTRATOR"){
+		echo '<script type="text/javascript"> window.location = "./administratorLanding.php" </script>';
 	}
 
 
