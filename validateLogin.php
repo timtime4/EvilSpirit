@@ -18,6 +18,9 @@
 	$userType = $queryArray["userType"];
 	
 	// TODO: Validate password
+	if(!password_verify($_POST["password"]), $queryArray["password"]){
+		echo "Incorrect Username or Password!";
+	}
 
 	// Start session
 	session_start();
