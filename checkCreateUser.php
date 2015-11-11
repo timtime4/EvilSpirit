@@ -1,7 +1,9 @@
 <?php
   function checkForm(){
-    if( !isset($_POST["username"]) && !isset($_POST["password"])
-    	&& !isset($_POST["password2"])){
+    echo "Hello\n";
+
+    if( $_POST["username"] == "" && $_POST["password"] == ""
+    	&& $_POST["password2"] == "" ){
     	die("Those forms must be filled out\n");
     	return false;
     }
@@ -35,37 +37,32 @@
 			$fields[] = "password";
 			$values[] = password_hash($_POST["password"], PASSWORD_DEFAULT);
 
-			if(isset($_POST["firstName"])){
+			if($_POST["firstName"] != ""){
 				$fields[] = "firstName";
 				$values[] = $_POST["firstName"];
 			}
 
-			if(isset($_POST["lastName"])){
+			if($_POST["lastName"] != ""){
 				$fields[] = "lastName";
 				$values[] = $_POST["lastName"];
 			}
 
-			if(isset($_POST["email"])){
+			if($_POST["email"] != ""){
 				$fields[] = "email";
 				$values[] = $_POST["email"];
 			}
 
-			if(isset($_POST["phoneNum"])){
+			if($_POST["phoneNum"] != ""){
 				$fields[] = "phoneNum";
 				$values[] = $_POST["phoneNum"];
-			}
-
-			if(isset($_POST["firstName"])){
-				$fields[] = "firstName";
-				$values[] = $_POST["firstName"];
 			}
 
 			$leaseQuery = "INSERT INTO Users(" .  
 				implode(",", $fields) . ") VALUES (" .
 				implode(",", $values) . ")";
 
-			echo $leaseQuery;
-			die("\nthere it is");
+      	
+
     }
   }
 ?>
