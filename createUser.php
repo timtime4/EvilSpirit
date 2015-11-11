@@ -32,7 +32,7 @@
 			</div>
 			<div>
 				<label>Phone:</label>
-				<input type="text" name="phone">
+				<input type="text" name="phoneNum">
 			</div>
 			<div>
 				<input type="submit" value="Create User" name="submit">
