@@ -57,11 +57,12 @@
 				$values[] = $_POST["phoneNum"];
 			}
 
-			$leaseQuery = "INSERT INTO Users(" .  
+			$newUserSubmit = "INSERT INTO Users(" .  
 				implode(",", $fields) . ") VALUES (" .
 				implode(",", $values) . ")";
 
-      	
+      $newUserSumbitResult = mysqli_query($link, $newUserSubmit) 
+				or die('Insert Query failed: ' . mysql_error());
 
     }
   }
